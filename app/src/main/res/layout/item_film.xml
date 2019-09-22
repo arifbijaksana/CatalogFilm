@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:padding="10dp"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:scaleType="fitStart"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@+id/banner"
+        android:layout_toEndOf="@+id/banner"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="@string/titleName"
+        android:textSize="21sp"
+        android:layout_width="match_parent"
+        android:textColor="@color/primaryTextColor"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_toRightOf="@+id/banner"
+        android:layout_toEndOf="@+id/banner"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="@string/year"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_below="@id/year"
+        android:layout_toEndOf="@id/banner"
+        android:layout_toRightOf="@id/year"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

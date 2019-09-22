@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movie Catalog dicoding </string>
+    <string name="titleName">Title</string>
+    <string name="year">Tahun</string>
+    <string name="overview">Gambaran</string>
+    <string name="description">Detail</string>
+</resources>

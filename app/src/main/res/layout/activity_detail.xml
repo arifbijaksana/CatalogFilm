@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitStart"
+        android:contentDescription="banner"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/titleName"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/banner"
+        android:layout_toEndOf="@+id/banner"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primaryTextColor"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:text="@string/year"
+        android:textSize="19sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/banner"
+        android:layout_toEndOf="@+id/banner"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextSecondary"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_below="@id/year"
+        android:layout_toEndOf="@id/banner"
+        android:layout_toRightOf="@id/year"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/overview"
+        android:id="@+id/overview"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_below="@id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/description"
+        android:text="@string/description"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_below="@id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
